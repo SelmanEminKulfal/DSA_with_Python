@@ -4,11 +4,11 @@ class Node:
         self.next = None
         self.prev = None
 
-node1 = Node(3)
-node2 = Node(5)
-node3 = Node(13)
-node4 = Node(2)
-node5 = Node(5)
+node1 = Node(int(input("Type first number : ")))
+node2 = Node(int(input("Type second number : ")))
+node3 = Node(int(input("Type third number : ")))
+node4 = Node(int(input("Type fourth number : ")))
+node5 = Node(int(input("Type fifth number : ")))
 
 node1.next = node2 # type: ignore
 node1.prev = node5 # type: ignore
@@ -37,8 +37,8 @@ while currentNode != startNode:
 print("...")
 
 print("\nTraversing backward:")
-currentNode = node4
-startNode = node4
+currentNode = node5
+startNode = node5
 print(currentNode.data, end=" -> ")
 currentNode = currentNode.prev
 
